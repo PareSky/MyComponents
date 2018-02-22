@@ -1,5 +1,5 @@
 # 横向滑动的图片组
-
+![imageScroll](./images/imageScroll.png)
 ``` js
 /*
 * eleObject 目标dom对象
