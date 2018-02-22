@@ -2,7 +2,7 @@
 # 新建信息滚动栏
 跑马灯效果，多条消息从下往上循环滚动
 
-![滚动消息](./images/TitleScoll.png)
+![滚动消息](./images/TitleScroll.png)
 
 ``` js
 /*  eleObject: 容器
