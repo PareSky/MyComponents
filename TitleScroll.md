@@ -1,13 +1,17 @@
 
-	/**
-	 * 新建信息滚动栏-跑马灯效果，多条消息从下往上循环滚动
-	 *  eleObject: 容器
-	 * messages: 消息数组
-	 * params:
-	 * 		duration: 翻滚速度（秒）
-	 * 		hrefs: 消息对应的链接
-	 * 		delay: 翻滚间隔
-	 */
+# 新建信息滚动栏
+跑马灯效果，多条消息从下往上循环滚动
+
+![滚动消息](./images/async.png)
+
+``` js
+/*  eleObject: 容器
+* messages: 消息数组
+* params:
+* 		duration: 翻滚速度（秒）
+* 		hrefs: 消息对应的链接
+* 		delay: 翻滚间隔
+*/
 	function initTitleScroll(eleObject, messages,params){
 		var rounds = messages.length; // 滚动条数
 		if (rounds==0) {return}
@@ -51,3 +55,4 @@
 		},params.delay||3000)
 
 	}
+```
