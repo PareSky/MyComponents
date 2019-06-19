@@ -27,16 +27,7 @@ const selfMap = function(fn, context){
 
 3. 使用 reduce 实现数组 map 方法
 
-const reduceMap = function(fn, context){
-	let arr = Array.prototype.slice.call(this)
-	let mappedArr = []
-	arr.reduce((pre, cur, i)=>{
-		mappedArr.push(fn.call(context, cur, i, this))
-	}, [])
-	return mappedArr
-}
-
-const selfMap2 = function(fn, context){
+const selfMap = function(fn, context){
 	let arr = Array.prototype.slice.call(this)
 	return arr.reduce((pre, next, i)=>{
 		return [...pre, fn.call(context, next, i, this)]
